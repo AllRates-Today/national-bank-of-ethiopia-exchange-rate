@@ -1,0 +1,55 @@
+{
+  "name": "national-bank-of-ethiopia-exchange-rate",
+  "version": "1.2.7",
+  "description": "Official National Bank of Ethiopia (Ethiopia) daily exchange rates — 19 currencies vs ETB, history since 2024. Zero-dependency Node.js/TypeScript client.",
+  "keywords": [
+    "nbe",
+    "national",
+    "bank",
+    "of",
+    "ethiopia",
+    "exchange-rate",
+    "exchange-rates",
+    "currency",
+    "forex",
+    "fx",
+    "etb",
+    "central-bank",
+    "official-rates",
+    "ethiopia",
+    "api",
+    "typescript"
+  ],
+  "homepage": "https://allratestoday.com/central-bank-rates-api/nbe/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AllRates-Today/national-bank-of-ethiopia-exchange-rate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AllRates-Today/national-bank-of-ethiopia-exchange-rate/issues"
+  },
+  "license": "MIT",
+  "author": "AllRatesToday <hello@allratestoday.com> (https://allratestoday.com)",
+  "type": "module",
+  "main": "./index.cjs",
+  "module": "./index.mjs",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs",
+      "require": "./index.cjs"
+    }
+  },
+  "files": [
+    "index.mjs",
+    "index.cjs",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false
+}
