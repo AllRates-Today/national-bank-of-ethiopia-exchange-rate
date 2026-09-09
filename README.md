@@ -70,10 +70,10 @@ const pair = await getRate('USD', 'ETB', { apiKey: 'art_live_...' });
 {
   bank: 'nbe',
   name: 'National Bank of Ethiopia',
-  rate_date: '2026-08-21',   // National Bank of Ethiopia's own publication date
+  rate_date: '2026-09-09',   // National Bank of Ethiopia's own publication date
   source: 'USD',
   target: 'ETB',
-  rate: 160.9033,
+  rate: 160.7556,
   rate_type: 'reference',
   derived: false,
   method: 'published',
@@ -98,11 +98,11 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'nbe',
   name: 'National Bank of Ethiopia',
-  rate_date: '2026-08-21',
+  rate_date: '2026-09-09',
   rates: [
-    { "base": "USD", "quote": "ETB", "type": "reference", "value": 160.9033 },
-    { "base": "USD", "quote": "ETB", "type": "sell", "value": 162.5123 },
-    { "base": "USD", "quote": "ETB", "type": "buy", "value": 160.9033 },
+    { "base": "USD", "quote": "ETB", "type": "reference", "value": 160.7556 },
+    { "base": "USD", "quote": "ETB", "type": "sell", "value": 162.3632 },
+    { "base": "USD", "quote": "ETB", "type": "buy", "value": 160.7556 },
     // … the rest of the published table (19 currencies vs ETB)
   ],
   disclaimer: '…'
@@ -142,7 +142,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'national-bank-of-ethiopia-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'ETB', from: '2026-01-01', to: '2026-08-21' },
+  { source: 'USD', target: 'ETB', from: '2026-01-01', to: '2026-09-09' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -155,11 +155,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'ETB',
   from: '2026-01-01',
-  to: '2026-08-21',
+  to: '2026-09-09',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-08-21', rate: 160.9033, rate_type: 'reference', derived: false, method: 'published' },
+    { date: '2026-09-09', rate: 160.7556, rate_type: 'reference', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
@@ -237,6 +237,14 @@ getRate('USD', 'ETB', { apiKey: 'art_live_...' }).then((pair) => console.log(pai
 | `getLatestRates({ apiKey })` | Free | The central bank's full latest published table |
 | `getRatesForDate(date, { apiKey, source?, target? })` | Paid | The official table (or one pair) for a YYYY-MM-DD date |
 | `getHistory({ symbol \| source+target, from?, to? }, { apiKey })` | Paid | Daily series since 2024 |
+
+## 📥 Bulk data (no key)
+
+Need the whole archive rather than an API call? The same published tables are mirrored daily as open data:
+
+- Hugging Face: [AllRates/central-bank-exchange-rates](https://huggingface.co/datasets/AllRates/central-bank-exchange-rates) — one CSV per institution (`rates/nbe.csv`)
+- Kaggle: [allratestoday/central-bank-exchange-rates](https://www.kaggle.com/datasets/allratestoday/central-bank-exchange-rates)
+- CDN JSON: `https://cdn.jsdelivr.net/gh/AllRates-Today/central-bank-exchange-rates@main/data/nbe/latest.json`
 
 ## 🔗 Links
 
