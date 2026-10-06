@@ -85,10 +85,10 @@ const pair = await getRate('USD', 'ETB', { apiKey: 'art_live_...' });
 {
   bank: 'nbe',
   name: 'National Bank of Ethiopia',
-  rate_date: '2026-09-25',   // National Bank of Ethiopia's own publication date
+  rate_date: '2026-10-06',   // National Bank of Ethiopia's own publication date
   source: 'USD',
   target: 'ETB',
-  rate: 160.7882,
+  rate: 160.9865,
   rate_type: 'reference',
   derived: false,
   method: 'published',
@@ -113,11 +113,11 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'nbe',
   name: 'National Bank of Ethiopia',
-  rate_date: '2026-09-25',
+  rate_date: '2026-10-06',
   rates: [
-    { "base": "USD", "quote": "ETB", "type": "reference", "value": 160.7882 },
-    { "base": "USD", "quote": "ETB", "type": "sell", "value": 162.3961 },
-    { "base": "USD", "quote": "ETB", "type": "buy", "value": 160.7882 },
+    { "base": "USD", "quote": "ETB", "type": "reference", "value": 160.9865 },
+    { "base": "USD", "quote": "ETB", "type": "sell", "value": 162.5964 },
+    { "base": "USD", "quote": "ETB", "type": "buy", "value": 160.9865 },
     // … the rest of the published table (19 currencies vs ETB)
   ],
   disclaimer: '…'
@@ -157,7 +157,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'national-bank-of-ethiopia-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'ETB', from: '2026-01-01', to: '2026-09-25' },
+  { source: 'USD', target: 'ETB', from: '2026-01-01', to: '2026-10-06' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -170,11 +170,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'ETB',
   from: '2026-01-01',
-  to: '2026-09-25',
+  to: '2026-10-06',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-09-25', rate: 160.7882, rate_type: 'reference', derived: false, method: 'published' },
+    { date: '2026-10-06', rate: 160.9865, rate_type: 'reference', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
