@@ -4,6 +4,8 @@
 [![license](https://img.shields.io/npm/l/national-bank-of-ethiopia-exchange-rate.svg)](https://github.com/AllRates-Today/national-bank-of-ethiopia-exchange-rate/blob/main/LICENSE)
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://www.npmjs.com/package/national-bank-of-ethiopia-exchange-rate)
 [![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg)](https://www.typescriptlang.org/)
+[![USD/ETB today](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fnbe%3Fsource%3DUSD%26target%3DETB&query=%24.rate&label=USD%2FETB%20published%20by%20National%20Bank%20of%20Ethiopia&color=0A7E8C&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/nbe/)
+[![rate date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fnbe%3Fsource%3DUSD%26target%3DETB&query=%24.rate_date&label=rate%20date&color=555&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/nbe/)
 
 **Official National Bank of Ethiopia (Ethiopia) daily exchange rates for Node.js and TypeScript. The published central bank rates behind tax filings, customs valuations, audits, and compliant invoicing — not market estimates, but the numbers National Bank of Ethiopia itself prints, every business day.**
 
@@ -32,6 +34,76 @@ console.log(r.rate_date, r.rates.length); // the central bank's latest published
 ```
 
 The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+
+## 📈 Latest published table
+
+Today's full National Bank of Ethiopia table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
+
+<!-- daily-table:start -->
+Published **2026-10-09** by National Bank of Ethiopia — 57 rates. Updated 2026-10-09.
+
+| Base | Quote | Type | Rate |
+| --- | --- | --- | ---: |
+| AED | ETB | buy | 43.833 |
+| AED | ETB | reference | 44.0522 |
+| AED | ETB | sell | 44.2713 |
+| AUD | ETB | buy | 111.92 |
+| AUD | ETB | reference | 112.4796 |
+| AUD | ETB | sell | 113.0392 |
+| CAD | ETB | buy | 113.0387 |
+| CAD | ETB | reference | 113.6039 |
+| CAD | ETB | sell | 114.1691 |
+| CHF | ETB | buy | 193.1954 |
+| CHF | ETB | reference | 194.1614 |
+| CHF | ETB | sell | 195.1273 |
+| CNY | ETB | buy | 24.0194 |
+| CNY | ETB | reference | 24.1395 |
+| CNY | ETB | sell | 24.2595 |
+| DJF | ETB | buy | 0.9017 |
+| DJF | ETB | reference | 0.9152 |
+| DJF | ETB | sell | 0.9287 |
+| DKK | ETB | buy | 24.1143 |
+| DKK | ETB | reference | 24.2349 |
+| DKK | ETB | sell | 24.3555 |
+| EUR | ETB | buy | 180.2602 |
+| EUR | ETB | reference | 181.1615 |
+| EUR | ETB | sell | 182.0628 |
+| GBP | ETB | buy | 212.6674 |
+| GBP | ETB | reference | 213.7308 |
+| GBP | ETB | sell | 214.7941 |
+| INR | ETB | buy | 1.6633 |
+| INR | ETB | reference | 1.6716 |
+| INR | ETB | sell | 1.6799 |
+| JPY | ETB | buy | 1.0171 |
+| JPY | ETB | reference | 1.0222 |
+| JPY | ETB | sell | 1.0273 |
+| KES | ETB | buy | 1.2389 |
+| KES | ETB | reference | 1.2575 |
+| KES | ETB | sell | 1.276 |
+| KWD | ETB | buy | 522.3472 |
+| KWD | ETB | reference | 524.959 |
+| KWD | ETB | sell | 527.5707 |
+| NOK | ETB | buy | 16.8032 |
+| NOK | ETB | reference | 16.8872 |
+| NOK | ETB | sell | 16.9712 |
+| SAR | ETB | buy | 42.8791 |
+| SAR | ETB | reference | 43.0935 |
+| SAR | ETB | sell | 43.3079 |
+| SEK | ETB | buy | 16.0896 |
+| SEK | ETB | reference | 16.1701 |
+| SEK | ETB | sell | 16.2505 |
+| USD | ETB | buy | 160.9897 |
+| USD | ETB | reference | 160.9897 |
+| USD | ETB | sell | 162.5996 |
+| XDR | ETB | buy | 217.6903 |
+| XDR | ETB | reference | 218.7788 |
+| XDR | ETB | sell | 219.8672 |
+| ZAR | ETB | buy | 9.6552 |
+| ZAR | ETB | reference | 9.7035 |
+| ZAR | ETB | sell | 9.7517 |
+
+Source: [Official rates published by NBE, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/nbe/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+<!-- daily-table:end -->
 
 ## 🔑 Get your API key
 
