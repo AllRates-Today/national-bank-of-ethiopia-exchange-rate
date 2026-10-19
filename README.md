@@ -33,76 +33,79 @@ const r = await fetch('https://allratestoday.com/api/open/central-bank/nbe').the
 console.log(r.rate_date, r.rates.length); // the central bank's latest published table, no key
 ```
 
-The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables and history.
 
 ## 📈 Latest published table
 
 [![Latest National Bank of Ethiopia table](https://allratestoday.com/api/open/central-bank/nbe/table.svg)](https://allratestoday.com/central-bank-rates-api/nbe/)
 
-The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
+The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-16** by National Bank of Ethiopia — 57 rates. Updated 2026-10-16.
+<details>
+<summary>Table as text: published 2026-10-19 by National Bank of Ethiopia — 57 rates. Updated 2026-10-19.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | ETB | buy | 43.815 |
-| AED | ETB | reference | 44.0341 |
-| AED | ETB | sell | 44.2531 |
-| AUD | ETB | buy | 111.2787 |
-| AUD | ETB | reference | 111.8351 |
-| AUD | ETB | sell | 112.3915 |
-| CAD | ETB | buy | 113.3505 |
-| CAD | ETB | reference | 113.9173 |
-| CAD | ETB | sell | 114.484 |
-| CHF | ETB | buy | 193.8606 |
-| CHF | ETB | reference | 194.8299 |
-| CHF | ETB | sell | 195.7992 |
-| CNY | ETB | buy | 24.0501 |
-| CNY | ETB | reference | 24.1704 |
-| CNY | ETB | sell | 24.2906 |
-| DJF | ETB | buy | 0.9013 |
-| DJF | ETB | reference | 0.9148 |
-| DJF | ETB | sell | 0.9283 |
-| DKK | ETB | buy | 24.1486 |
-| DKK | ETB | reference | 24.2694 |
-| DKK | ETB | sell | 24.3901 |
-| EUR | ETB | buy | 180.5081 |
-| EUR | ETB | reference | 181.4107 |
-| EUR | ETB | sell | 182.3132 |
-| GBP | ETB | buy | 213.3365 |
-| GBP | ETB | reference | 214.4032 |
-| GBP | ETB | sell | 215.4699 |
-| INR | ETB | buy | 1.6928 |
-| INR | ETB | reference | 1.7013 |
-| INR | ETB | sell | 1.7097 |
-| JPY | ETB | buy | 1.019 |
-| JPY | ETB | reference | 1.0241 |
-| JPY | ETB | sell | 1.0291 |
-| KES | ETB | buy | 1.2374 |
-| KES | ETB | reference | 1.256 |
-| KES | ETB | sell | 1.2745 |
-| KWD | ETB | buy | 522.133 |
-| KWD | ETB | reference | 524.7437 |
-| KWD | ETB | sell | 527.3544 |
-| NOK | ETB | buy | 16.9422 |
-| NOK | ETB | reference | 17.0269 |
-| NOK | ETB | sell | 17.1116 |
-| SAR | ETB | buy | 42.881 |
-| SAR | ETB | reference | 43.0954 |
-| SAR | ETB | sell | 43.3098 |
-| SEK | ETB | buy | 16.1533 |
-| SEK | ETB | reference | 16.2341 |
-| SEK | ETB | sell | 16.3148 |
-| USD | ETB | buy | 160.9237 |
-| USD | ETB | reference | 160.9237 |
-| USD | ETB | sell | 162.5329 |
-| XDR | ETB | buy | 217.6976 |
-| XDR | ETB | reference | 218.7861 |
-| XDR | ETB | sell | 219.8746 |
-| ZAR | ETB | buy | 9.7324 |
-| ZAR | ETB | reference | 9.7811 |
-| ZAR | ETB | sell | 9.8297 |
+| AED | ETB | buy | 43.7885 |
+| AED | ETB | reference | 44.0075 |
+| AED | ETB | sell | 44.2264 |
+| AUD | ETB | buy | 111.9 |
+| AUD | ETB | reference | 112.4595 |
+| AUD | ETB | sell | 113.019 |
+| CAD | ETB | buy | 113.5669 |
+| CAD | ETB | reference | 114.1348 |
+| CAD | ETB | sell | 114.7026 |
+| CHF | ETB | buy | 195.1961 |
+| CHF | ETB | reference | 196.1721 |
+| CHF | ETB | sell | 197.1481 |
+| CNY | ETB | buy | 24.0521 |
+| CNY | ETB | reference | 24.1724 |
+| CNY | ETB | sell | 24.2926 |
+| DJF | ETB | buy | 0.9007 |
+| DJF | ETB | reference | 0.9142 |
+| DJF | ETB | sell | 0.9277 |
+| DKK | ETB | buy | 24.2071 |
+| DKK | ETB | reference | 24.3281 |
+| DKK | ETB | sell | 24.4491 |
+| EUR | ETB | buy | 180.9409 |
+| EUR | ETB | reference | 181.8457 |
+| EUR | ETB | sell | 182.7504 |
+| GBP | ETB | buy | 214.4724 |
+| GBP | ETB | reference | 215.5448 |
+| GBP | ETB | sell | 216.6171 |
+| INR | ETB | buy | 1.6934 |
+| INR | ETB | reference | 1.7019 |
+| INR | ETB | sell | 1.7103 |
+| JPY | ETB | buy | 1.0178 |
+| JPY | ETB | reference | 1.0229 |
+| JPY | ETB | sell | 1.028 |
+| KES | ETB | buy | 1.2371 |
+| KES | ETB | reference | 1.2557 |
+| KES | ETB | sell | 1.2742 |
+| KWD | ETB | buy | 521.8034 |
+| KWD | ETB | reference | 524.4124 |
+| KWD | ETB | sell | 527.0214 |
+| NOK | ETB | buy | 17.0297 |
+| NOK | ETB | reference | 17.1149 |
+| NOK | ETB | sell | 17.2 |
+| SAR | ETB | buy | 42.8528 |
+| SAR | ETB | reference | 43.0671 |
+| SAR | ETB | sell | 43.2813 |
+| SEK | ETB | buy | 16.2296 |
+| SEK | ETB | reference | 16.3108 |
+| SEK | ETB | sell | 16.3919 |
+| USD | ETB | buy | 160.8221 |
+| USD | ETB | reference | 160.8221 |
+| USD | ETB | sell | 162.4303 |
+| XDR | ETB | buy | 217.7531 |
+| XDR | ETB | reference | 218.8419 |
+| XDR | ETB | sell | 219.9307 |
+| ZAR | ETB | buy | 9.7847 |
+| ZAR | ETB | reference | 9.8336 |
+| ZAR | ETB | sell | 9.8825 |
+
+</details>
 
 Source: [Official rates published by NBE, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/nbe/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
@@ -377,7 +380,8 @@ Need the whole archive rather than an API call? The same published tables are mi
 - [All central bank sources](https://allratestoday.com/central-bank-rates-api/)
 - [Package docs on the site](https://allratestoday.com/docs/sdk/national-bank-of-ethiopia-exchange-rate/) · [ERP integration guides](https://allratestoday.com/docs/integrations/)
 - [API documentation](https://allratestoday.com/docs/#central-bank) · [Interactive reference](https://allratestoday.com/api-reference/) · [Methodology](https://allratestoday.com/official-rates-methodology/)
-- [Register (free)](https://allratestoday.com/register) · [Pricing](https://allratestoday.com/pricing/)
+- [Register (Free)](https://allratestoday.com/register) · [Dashboard](https://allratestoday.com/profile) · [Pricing](https://allratestoday.com/pricing/)
+- [Status](https://allratestoday.com/status)
 - [GitHub](https://github.com/AllRates-Today/national-bank-of-ethiopia-exchange-rate)
 
 ## 📜 License
