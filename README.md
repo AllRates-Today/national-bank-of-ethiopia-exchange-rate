@@ -47,67 +47,67 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-28 by National Bank of Ethiopia — 57 rates. Updated 2026-10-28.</summary>
+<summary>Table as text: published 2026-10-29 by National Bank of Ethiopia — 57 rates. Updated 2026-10-29.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | ETB | buy | 43.8312 |
-| AED | ETB | reference | 44.0504 |
-| AED | ETB | sell | 44.2695 |
-| AUD | ETB | buy | 113.1322 |
-| AUD | ETB | reference | 113.6979 |
-| AUD | ETB | sell | 114.2635 |
-| CAD | ETB | buy | 114.7352 |
-| CAD | ETB | reference | 115.3089 |
-| CAD | ETB | sell | 115.8825 |
-| CHF | ETB | buy | 194.1353 |
-| CHF | ETB | reference | 195.106 |
-| CHF | ETB | sell | 196.0766 |
-| CNY | ETB | buy | 24.1461 |
-| CNY | ETB | reference | 24.2668 |
-| CNY | ETB | sell | 24.3875 |
+| AED | ETB | buy | 43.8349 |
+| AED | ETB | reference | 44.0541 |
+| AED | ETB | sell | 44.2732 |
+| AUD | ETB | buy | 113.226 |
+| AUD | ETB | reference | 113.7921 |
+| AUD | ETB | sell | 114.3582 |
+| CAD | ETB | buy | 114.6588 |
+| CAD | ETB | reference | 115.2321 |
+| CAD | ETB | sell | 115.8054 |
+| CHF | ETB | buy | 193.8733 |
+| CHF | ETB | reference | 194.8427 |
+| CHF | ETB | sell | 195.812 |
+| CNY | ETB | buy | 24.1509 |
+| CNY | ETB | reference | 24.2717 |
+| CNY | ETB | sell | 24.3924 |
 | DJF | ETB | buy | 0.9017 |
 | DJF | ETB | reference | 0.9152 |
 | DJF | ETB | sell | 0.9287 |
-| DKK | ETB | buy | 24.0042 |
-| DKK | ETB | reference | 24.1243 |
-| DKK | ETB | sell | 24.2443 |
-| EUR | ETB | buy | 179.4305 |
-| EUR | ETB | reference | 180.3277 |
-| EUR | ETB | sell | 181.2248 |
-| GBP | ETB | buy | 214.3828 |
-| GBP | ETB | reference | 215.4547 |
-| GBP | ETB | sell | 216.5266 |
-| INR | ETB | buy | 1.6925 |
-| INR | ETB | reference | 1.701 |
-| INR | ETB | sell | 1.7094 |
-| JPY | ETB | buy | 1.0195 |
-| JPY | ETB | reference | 1.0246 |
-| JPY | ETB | sell | 1.0297 |
-| KES | ETB | buy | 1.2384 |
-| KES | ETB | reference | 1.257 |
-| KES | ETB | sell | 1.2756 |
-| KWD | ETB | buy | 522.3689 |
-| KWD | ETB | reference | 524.9808 |
-| KWD | ETB | sell | 527.5926 |
-| NOK | ETB | buy | 17.2776 |
-| NOK | ETB | reference | 17.364 |
-| NOK | ETB | sell | 17.4504 |
-| SAR | ETB | buy | 42.8889 |
-| SAR | ETB | reference | 43.1034 |
-| SAR | ETB | sell | 43.3178 |
-| SEK | ETB | buy | 16.2042 |
-| SEK | ETB | reference | 16.2852 |
-| SEK | ETB | sell | 16.3662 |
-| USD | ETB | buy | 160.9964 |
-| USD | ETB | reference | 160.9964 |
-| USD | ETB | sell | 162.6064 |
-| XDR | ETB | buy | 218.1179 |
-| XDR | ETB | reference | 219.2085 |
-| XDR | ETB | sell | 220.2991 |
-| ZAR | ETB | buy | 9.6679 |
-| ZAR | ETB | reference | 9.7163 |
-| ZAR | ETB | sell | 9.7646 |
+| DKK | ETB | buy | 23.9797 |
+| DKK | ETB | reference | 24.0996 |
+| DKK | ETB | sell | 24.2195 |
+| EUR | ETB | buy | 179.2167 |
+| EUR | ETB | reference | 180.1128 |
+| EUR | ETB | sell | 181.0089 |
+| GBP | ETB | buy | 213.9911 |
+| GBP | ETB | reference | 215.0611 |
+| GBP | ETB | sell | 216.131 |
+| INR | ETB | buy | 1.6906 |
+| INR | ETB | reference | 1.6991 |
+| INR | ETB | sell | 1.7075 |
+| JPY | ETB | buy | 1.018 |
+| JPY | ETB | reference | 1.0231 |
+| JPY | ETB | sell | 1.0282 |
+| KES | ETB | buy | 1.2375 |
+| KES | ETB | reference | 1.2561 |
+| KES | ETB | sell | 1.2746 |
+| KWD | ETB | buy | 522.0179 |
+| KWD | ETB | reference | 524.628 |
+| KWD | ETB | sell | 527.238 |
+| NOK | ETB | buy | 17.3151 |
+| NOK | ETB | reference | 17.4017 |
+| NOK | ETB | sell | 17.4883 |
+| SAR | ETB | buy | 42.9016 |
+| SAR | ETB | reference | 43.1161 |
+| SAR | ETB | sell | 43.3306 |
+| SEK | ETB | buy | 16.2086 |
+| SEK | ETB | reference | 16.2897 |
+| SEK | ETB | sell | 16.3707 |
+| USD | ETB | buy | 160.9924 |
+| USD | ETB | reference | 160.9924 |
+| USD | ETB | sell | 162.6023 |
+| XDR | ETB | buy | 217.7583 |
+| XDR | ETB | reference | 218.8471 |
+| XDR | ETB | sell | 219.9359 |
+| ZAR | ETB | buy | 9.6607 |
+| ZAR | ETB | reference | 9.709 |
+| ZAR | ETB | sell | 9.7573 |
 
 </details>
 
@@ -274,6 +274,7 @@ The National Bank of Ethiopia publishes daily indicative birr exchange rates —
 
 - Publisher's own page: [Daily indicative exchange rates](https://nbe.gov.et/exchange/indicatives-rates/) · [nbe.gov.et](https://nbe.gov.et)
 - Publication: every business day; the exact schedule, freshness status and any current delay are on the [National Bank of Ethiopia rates page](https://allratestoday.com/central-bank-rates-api/nbe/)
+- In the API: usually by **07:20 UTC** (measured over the last 11 publications). Schedule a sync at or after that time and retry hourly until `rate_date` moves; every response carries the same figure as `available_by_utc` — see [when to poll](https://allratestoday.com/docs/#when-to-poll)
 - Values are stored unmodified, with the publisher's own `rate_date` on every row — see the [methodology](https://allratestoday.com/official-rates-methodology/)
 
 ## 🧭 Reading the numbers
