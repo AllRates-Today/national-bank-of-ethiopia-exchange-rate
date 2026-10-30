@@ -24,90 +24,75 @@
 
 Get a free API key at [allratestoday.com/register](https://allratestoday.com/register) — no credit card required. Latest rates are on every plan, including free.
 
-## ⚡ Try it without a key
-
-The latest National Bank of Ethiopia table is also served keyless, CORS-open and edge-cached, for evaluation, embeds and AI agents:
-
-```bash
-curl "https://allratestoday.com/api/open/central-bank/nbe?source=USD&target=ETB"
-```
-
-```js
-const r = await fetch('https://allratestoday.com/api/open/central-bank/nbe').then((x) => x.json());
-console.log(r.rate_date, r.rates.length); // the central bank's latest published table, no key
-```
-
-The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and is free to use with a visible, followable link where the rates are shown: `<a href="https://allratestoday.com">Exchange rates by AllRatesToday</a>` (terms: <https://allratestoday.com/terms/#attribution>). The client below uses the keyed API, which adds point-in-time tables and history; with a key the link is appreciated, not required.
-
 ## 📈 Latest published table
 
 [![Latest National Bank of Ethiopia table](https://allratestoday.com/api/open/central-bank/nbe/table.svg)](https://allratestoday.com/central-bank-rates-api/nbe/)
 
-The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
+The image is rendered live from the keyless endpoint, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-29 by National Bank of Ethiopia — 57 rates. Updated 2026-10-29.</summary>
+<summary>Table as text: published 2026-10-30 by National Bank of Ethiopia — 57 rates. Updated 2026-10-30.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | ETB | buy | 43.8349 |
-| AED | ETB | reference | 44.0541 |
-| AED | ETB | sell | 44.2732 |
-| AUD | ETB | buy | 113.226 |
-| AUD | ETB | reference | 113.7921 |
-| AUD | ETB | sell | 114.3582 |
-| CAD | ETB | buy | 114.6588 |
-| CAD | ETB | reference | 115.2321 |
-| CAD | ETB | sell | 115.8054 |
-| CHF | ETB | buy | 193.8733 |
-| CHF | ETB | reference | 194.8427 |
-| CHF | ETB | sell | 195.812 |
-| CNY | ETB | buy | 24.1509 |
-| CNY | ETB | reference | 24.2717 |
-| CNY | ETB | sell | 24.3924 |
-| DJF | ETB | buy | 0.9017 |
-| DJF | ETB | reference | 0.9152 |
-| DJF | ETB | sell | 0.9287 |
-| DKK | ETB | buy | 23.9797 |
-| DKK | ETB | reference | 24.0996 |
-| DKK | ETB | sell | 24.2195 |
-| EUR | ETB | buy | 179.2167 |
-| EUR | ETB | reference | 180.1128 |
-| EUR | ETB | sell | 181.0089 |
-| GBP | ETB | buy | 213.9911 |
-| GBP | ETB | reference | 215.0611 |
-| GBP | ETB | sell | 216.131 |
-| INR | ETB | buy | 1.6906 |
-| INR | ETB | reference | 1.6991 |
-| INR | ETB | sell | 1.7075 |
+| AED | ETB | buy | 43.8202 |
+| AED | ETB | reference | 44.0393 |
+| AED | ETB | sell | 44.2584 |
+| AUD | ETB | buy | 113.0786 |
+| AUD | ETB | reference | 113.644 |
+| AUD | ETB | sell | 114.2093 |
+| CAD | ETB | buy | 114.9757 |
+| CAD | ETB | reference | 115.5506 |
+| CAD | ETB | sell | 116.1255 |
+| CHF | ETB | buy | 194.188 |
+| CHF | ETB | reference | 195.159 |
+| CHF | ETB | sell | 196.1299 |
+| CNY | ETB | buy | 24.1584 |
+| CNY | ETB | reference | 24.2792 |
+| CNY | ETB | sell | 24.3999 |
+| DJF | ETB | buy | 0.9014 |
+| DJF | ETB | reference | 0.9149 |
+| DJF | ETB | sell | 0.9284 |
+| DKK | ETB | buy | 23.9605 |
+| DKK | ETB | reference | 24.0804 |
+| DKK | ETB | sell | 24.2002 |
+| EUR | ETB | buy | 179.0813 |
+| EUR | ETB | reference | 179.9767 |
+| EUR | ETB | sell | 180.8721 |
+| GBP | ETB | buy | 214.2312 |
+| GBP | ETB | reference | 215.3024 |
+| GBP | ETB | sell | 216.3735 |
+| INR | ETB | buy | 1.6893 |
+| INR | ETB | reference | 1.6978 |
+| INR | ETB | sell | 1.7062 |
 | JPY | ETB | buy | 1.018 |
 | JPY | ETB | reference | 1.0231 |
 | JPY | ETB | sell | 1.0282 |
-| KES | ETB | buy | 1.2375 |
-| KES | ETB | reference | 1.2561 |
-| KES | ETB | sell | 1.2746 |
-| KWD | ETB | buy | 522.0179 |
-| KWD | ETB | reference | 524.628 |
-| KWD | ETB | sell | 527.238 |
-| NOK | ETB | buy | 17.3151 |
-| NOK | ETB | reference | 17.4017 |
-| NOK | ETB | sell | 17.4883 |
-| SAR | ETB | buy | 42.9016 |
-| SAR | ETB | reference | 43.1161 |
-| SAR | ETB | sell | 43.3306 |
-| SEK | ETB | buy | 16.2086 |
-| SEK | ETB | reference | 16.2897 |
-| SEK | ETB | sell | 16.3707 |
-| USD | ETB | buy | 160.9924 |
-| USD | ETB | reference | 160.9924 |
-| USD | ETB | sell | 162.6023 |
-| XDR | ETB | buy | 217.7583 |
-| XDR | ETB | reference | 218.8471 |
-| XDR | ETB | sell | 219.9359 |
-| ZAR | ETB | buy | 9.6607 |
-| ZAR | ETB | reference | 9.709 |
-| ZAR | ETB | sell | 9.7573 |
+| KES | ETB | buy | 1.2371 |
+| KES | ETB | reference | 1.2557 |
+| KES | ETB | sell | 1.2742 |
+| KWD | ETB | buy | 522.0347 |
+| KWD | ETB | reference | 524.6449 |
+| KWD | ETB | sell | 527.2551 |
+| NOK | ETB | buy | 17.3368 |
+| NOK | ETB | reference | 17.4235 |
+| NOK | ETB | sell | 17.5102 |
+| SAR | ETB | buy | 42.885 |
+| SAR | ETB | reference | 43.0994 |
+| SAR | ETB | sell | 43.3138 |
+| SEK | ETB | buy | 16.2778 |
+| SEK | ETB | reference | 16.3592 |
+| SEK | ETB | sell | 16.4405 |
+| USD | ETB | buy | 160.943 |
+| USD | ETB | reference | 160.943 |
+| USD | ETB | sell | 162.5524 |
+| XDR | ETB | buy | 217.5627 |
+| XDR | ETB | reference | 218.6506 |
+| XDR | ETB | sell | 219.7384 |
+| ZAR | ETB | buy | 9.6694 |
+| ZAR | ETB | reference | 9.7178 |
+| ZAR | ETB | sell | 9.7661 |
 
 </details>
 
